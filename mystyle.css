@@ -1,0 +1,137 @@
+/* BODY */
+body,html {
+  margin:0;
+  padding:0;
+}
+
+/* NAV-BAR */
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-right: 7rem;
+  padding-top: 2rem;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.title {
+  width: 5cm;
+  
+}
+
+.title a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+}
+
+
+.primary-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* @supports (backdrop-filter: blur(1rem)) {
+  .primary-nav {
+    background: hsl(0, 0%, 100%, 0.1);
+    backdrop-filter: blur(1rem);
+  }
+} */
+
+.primary-nav a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 2rem);
+}
+
+.flex-v {
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  gap: var(--gap, 2rem);
+}
+
+
+/* BREAKPOINT */
+@media (max-width: 38em) {
+  .primary-nav {
+    position: fixed;
+    inset: 0 0 0 30%;
+
+    flex-direction: column;
+    padding: min(20vh, 6rem) 2em;
+
+    background: hsl(0, 0%, 100%, 0.2);
+    backdrop-filter: blur(0.5rem);
+
+  }
+}
+
+/* BLOCCO SX HOMEPAGE */
+
+.blocco-sx {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: 560px;
+  word-wrap: normal;
+}
+
+.big-line-height {
+  line-height: 2.3rem;
+}
+
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Inter:wght@400;500;600&family=Nunito:wght@300;400&display=swap');
+
+.IBM {
+  font-family: 'IBM Plex Mono', monospace;
+}
+  
+.nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+  
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.big {
+  font-size: 1.52rem;
+}
+
+/* HOMEPAGE */
+
+.homepage {
+  background-image: url("img/sfondo.jpg");
+  /* margin: 0; */
+
+  
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
